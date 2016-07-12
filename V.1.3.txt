@@ -1,0 +1,22 @@
+E-Eventa 
+
+Updated: 21 October 15 - v.1.3
++ added: Login / Register page
++ added: RSVP page
++ added: Instagram widget in sidebar
++ added: Twitter widget in sidebar
++ fixes: Documentation expand
+
+Updated: 20 October 15 - v.1.2
++ added: Possibility to add more events in Homepage Event Slider
++ added: Footer v. 2
++ added: Speakers type 2, 3
++ fixes: small responsive issues 
+
+Updated: 01 April 15 - v.1.1
++ added: Sticky Menu
++ added: Schedule Type 2 section
++ added: Pricing type 2, 3 sections
++ fixes: small spacing adjustments 
+
+Created: 31 March 15 - v.1
