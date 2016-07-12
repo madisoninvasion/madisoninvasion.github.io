@@ -75,7 +75,15 @@ jQuery(document).ready(function () {
 
     jQuery(function() {
         if(jQuery('.sticky-bar').length) {
-            jQuery(".sticky-bar").sticky({topSpacing:0});       
+            jQuery(".sticky-bar").sticky({topSpacing:0})
+			.on('sticky-start', function () {
+				jQuery('.logo').css('display', 'none');
+				jQuery('.logotext').css('display', '');
+			})
+			.on('sticky-end', function () {
+				jQuery('.logo').css('display', '');
+				jQuery('.logotext').css('display', 'none');
+			});
         }
     });
 
