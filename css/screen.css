@@ -1504,7 +1504,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 7px solid #31393f;
+    border: 7px solid #F26130;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -1556,7 +1556,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     text-transform: none;
 }
 .coming-events .event-box h4 a {
-    color: #5a6a70;
+    color: #d7d7d7;
 }
 .coming-events .event-box h4 a:hover {
     border-bottom: 1px dotted;
@@ -2247,11 +2247,33 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     margin: 0 auto 50px;
     position: relative;
 }
+.site-title-dark {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #d7d7d7;
+    margin: 0 auto 50px;
+    position: relative;
+}
+.site-title-dark span {
+    color: #21AA98;
+    font-weight: 700;
+}
 .site-title span {
     color: #21AA98;
     font-weight: 700;
 }
 .site-title i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #21AA98;
+    margin: 0 0 -10px 10px;
+}
+.site-title-dark i {
     position: absolute;
     bottom: 0;
     left: 0;
