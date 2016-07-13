@@ -12,7 +12,7 @@
 
 /* SECTION I - CONFIGURATION */
 
-$receiver_mail = 'example@mail.com';
+$receiver_mail = 'tracey.reinke@gmail.com';
 $mail_title    = ( ! empty( $_POST[ 'website' ] )) ? $_POST[ 'contact-name' ] . ' from ' . $_POST[ 'website' ] : ' from [WebSite]';
 
 /* SECTION II - CODE */
@@ -20,8 +20,6 @@ $mail_title    = ( ! empty( $_POST[ 'website' ] )) ? $_POST[ 'contact-name' ] . 
 if ( ! empty( $_POST[ 'contact-name' ] ) && ! empty( $_POST [ 'contact-email' ] ) && ! empty( $_POST [ 'contact-message' ] ) ) {
 	$email   = $_POST[ 'contact-name' ] . '<' . $_POST[ 'contact-email' ] . '>';
 	$message = wordwrap( $_POST[ 'contact-message' ], 70, "\r\n" );
-	if(!empty($_POST[ 'contact-website' ]))
-		$message .= "\r\n\r\n".'Website: '.$_POST['contact-website'];
 	$subject = $mail_title;
 	$header .= 'From: '. $email . "\r\n";
 	$header .= 'Reply-To: ' . $email;
