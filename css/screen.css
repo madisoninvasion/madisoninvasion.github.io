@@ -298,7 +298,7 @@ a {
 /* ===  start color === */
 header .bottom-header .main-nav li a:hover,
 header .top-header ul li a:hover {
-    color: #F26130;
+    color: #ed9e72;
 }
 /* ===  end color === */
 
@@ -3254,7 +3254,6 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 	transition:all linear 0.15s;
 	/* Type */
 	font-size:1.200em;
-	text-shadow:0px 1px 0px #1a1a1a;
 	color:#fff;
 }
 
@@ -3262,6 +3261,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 	background:#505A83;
 	/* Type */
 	text-decoration:none;
+	color:#ed9e72;
 }
 
 .accordion-section:last-child .accordion-section-title {
