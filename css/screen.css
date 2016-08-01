@@ -411,7 +411,7 @@ header .bottom-header .logotext a:hover {
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 2px;
-	color: #F26130;
+	color: #9ecdc4;
 	}
 /* start main-nav */
 .responsive-menu {
@@ -463,14 +463,14 @@ header .bottom-header .main-nav>ul>li>a {
     color: #333;
 }
 .homepage header .bottom-header .main-nav>ul>li>a:hover {
-    color: #1D396B;
+    color: #9ecdc4;
 }
 .homepage header .bottom-header .main-nav>ul>li>a {
     color: #EBEBE1;
 }
 header .bottom-header .main-nav ul li:hover>ul {
     display: block;
-	color: #1D396B;
+	color: #9ecdc4;
 }
 header .bottom-header .main-nav ul li:hover a {
     display: block;
@@ -498,11 +498,11 @@ header .bottom-header .main-nav ul li ul li {
     margin-bottom: 5px;
 }
 header .bottom-header .main-nav ul li ul li a {
-    color: #5a6a70;
+    color: #1D396B;
     font-size: 13px;
 }
 header .bottom-header .main-nav ul li ul li:hover a {
-    color: #7E80A1;
+    color: #9ecdc4;
     font-size: 13px;
 }
 header .bottom-header .main-nav ul li ul li ul {
@@ -521,7 +521,7 @@ header .bottom-header .main-nav ul li ul li ul {
 }
 header .bottom-header .main-nav ul li ul li:hover ul {
     display: block;
-	color: #7E80A1;
+	color: #EBEBE1;
 }
 /* end main-nav */
 
@@ -1154,7 +1154,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     content: "";
 }
 .countdown-section .event-link span {
-    color: #1D396B;
+    color: #9ecdc4;
 }
 .countdown-section .countdown-box {
     margin: 0 auto;
