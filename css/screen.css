@@ -581,9 +581,8 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 	font-size: 24px;
     font-weight: 700;
     line-height: 1.5em;
-    padding: 15px 30px;
+    padding: 15px 15px;
     display: block;
-    margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
     text-transform: uppercase;
@@ -591,7 +590,6 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     border-radius: 3px;
 	text-align:center;
 	width: 300px;
-	box-shadow: 5px 5px 10px #505A83;
 	}
 .container .button a:hover{
     background: #1D396B;
