@@ -2140,6 +2140,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     line-height: 1.7em;
     font-weight: 300;
 }
+.our-team ul ul{
+    margin-bottom: 0;
+}
 .about-us {
     padding: 10px 0 50px;
     /*margin-bottom: 50px;*/
@@ -3288,3 +3291,4 @@ table, th, td {
 	margin-left: 25px;
 	}
 	}
+/*----- Lists -----*/
