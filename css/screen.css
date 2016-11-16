@@ -429,6 +429,7 @@ header .bottom-header .main-nav {
     margin: 0;
     padding: 0;
     font-size: 0;
+	
 }
 header .bottom-header .main-nav>ul>li {
     list-style: none;
@@ -436,6 +437,7 @@ header .bottom-header .main-nav>ul>li {
     display: inline-block;
     padding-bottom: 10px;
     position: relative;
+	z-index: 2000;
     margin-right: 30px;
     *zoom: 1;
     *display: inline;
@@ -604,6 +606,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .path-section {
     text-align: center;
     padding: 100px 0;
+	z-index: -2;
 }
 .path-section h3 {
     font-size: 44px;
@@ -639,7 +642,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     text-align: center;
     font-size: 0;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 .site-dot li {
     font-size: 14px;
