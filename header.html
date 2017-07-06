@@ -24,7 +24,7 @@
                   <li><a href="faq.html">FAQ</a></li>
                 </ul>
               </li>
-              
+
               <li><a href="contact.html">Contact</a></li>
               <li><a href="donate.html">Donate</a></li>
               <li><a href="http://madisoninvasion2017.dancecamps.org/booking.php" target="_blank">Register</a></li>
@@ -46,7 +46,7 @@
       super();
       const template = importDoc.querySelector('template'); // get template in import
       const clone = document.importNode(template.content, true); // import template
-      document.querySelector(elementTag).appendChild(clone);
+      this.appendChild(clone); // this is the DOM Element
     }
   }
   window.customElements.define(elementTag, HeaderElement);
