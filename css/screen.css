@@ -304,7 +304,7 @@ header .top-header ul li a:hover {
 
 /* sticky header */
 .homepage .is-sticky header .bottom-header {
-    background: rgba(126,128,161,0.8);
+    background: rgba(0,82,96,0.8);
 }
 .is-sticky header .top-header {
     display: none;
@@ -318,7 +318,7 @@ header .top-header ul li a:hover {
 }
 .is-sticky header .bottom-header {
     padding: 17px 0 0;
-	background: rgba(126,128,161,0.8); 
+	background: rgba(0,82,96,0.8); 
 }
 .is-sticky header {
  
@@ -574,7 +574,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     margin-bottom: 30px;
 }
 .site-image.home-img {
-    background: url('../images/HeroBanner5.jpg') no-repeat top center;
+    background: url('../images/HeroBanner.jpg') no-repeat top center;
 }
 
 .container .button a {
@@ -597,7 +597,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     background: #1D396B;
 }
 .site-image.page-img {
-    background: url('../images/HeroFooter.png') no-repeat top center;
+    background: url('../images/HeroFooter.jpg') no-repeat top center;
 }
 .site-image.error-img {
     margin-bottom: 0px;
@@ -1105,7 +1105,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .countdown-section {
     padding: 30px 0 30px;
     /*position: relative;*/
-	background: url('../images/HeroFooter.png') center right no-repeat;
+	background: url('../images/HeroFooter.jpg') center right no-repeat;
 }
 .countdown-section h1 {
     text-transform: uppercase;
@@ -1446,7 +1446,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 .coming-events {
     padding: 10px 0 50px;
-	background: url('../images/HeroFooter.png');
+	background: url('../images/HeroFooter.jpg');
 }
 .coming-events .event-filter {
     margin-bottom: 50px;
@@ -2859,7 +2859,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .footer-v2 {
     position: relative;
     z-index: 2;
-    background: url("../images/HeroFooter.png");
+    background: url("../images/HeroFooter.jpg");
     padding-top: 20px;
 }
 .footer-v2 .widget {
@@ -2936,7 +2936,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 .footer-v2 .widget.widget-events ul li h4 a:hover,
 .footer-v2 .widget.widget-links ul li a:hover {
-    color: #21AA98;
+    color: #e24e38;
 }
 .footer-v2 .widget p {
     color: #676e74;
@@ -2979,7 +2979,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     right: 0;
 }
 .footer-v2 .subscribe-box .subscribe-button:hover {
-    background: #5f7280;
+    background: #e24e38;
 }
 .footer-v2 .subscribe-box i {
     position: absolute;
