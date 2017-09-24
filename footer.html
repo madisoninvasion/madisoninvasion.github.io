@@ -1,0 +1,39 @@
+<template>
+  <div class="col-md-6">
+        <div class="widget widget-links">
+          <h4 class="widget-title">Useful links</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <!--<li><a href="venues.html">Venues</a></li>-->
+                <li><a href="harass.html">Harassment Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+               <!-- <li><a href="schedule.html">Schedule</a></li>-->
+                <li><a href="pricing.html">Pricing</a></li>
+                <!--<li><a href="http://2018madisoninvasion.dancecamps.org/booking.php" target="_blank">Register</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</template>
+
+<script>
+(function() {
+  const elementTag = 'footer-element'; // name of the tag
+  const importDoc = document.currentScript.ownerDocument; // importee
+  class HeaderElement extends HTMLElement {
+    constructor() {
+      super();
+      const template = importDoc.querySelector('template'); // get template in import
+      const clone = document.importNode(template.content, true); // import template
+      this.appendChild(clone); // this is the DOM Element
+    }
+  }
+  window.customElements.define(elementTag, HeaderElement);
+})()
+</script>
