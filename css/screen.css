@@ -3253,8 +3253,8 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 	width:100%;
 	padding:15px;
 	display:inline-block;
-	border-bottom:1px solid #3C4C79;
-	background:#3C4C79;
+	border-bottom:1px solid #21AA98;
+	background:#21AA98;
 	transition:all linear 0.15s;
 	/* Type */
 	font-size:1.200em;
@@ -3262,7 +3262,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
-	background:#505A83;
+	background:#21AA98;
 	/* Type */
 	text-decoration:none;
 	color:#ed9e72;
