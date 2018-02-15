@@ -26,7 +26,7 @@
 (function() {
   const elementTag = 'footer-element'; // name of the tag
   const importDoc = document.currentScript.ownerDocument; // importee
-  class HeaderElement extends HTMLElement {
+  class FooterElement extends HTMLElement {
     constructor() {
       super();
       const template = importDoc.querySelector('template'); // get template in import
@@ -34,6 +34,6 @@
       this.appendChild(clone); // this is the DOM Element
     }
   }
-  window.customElements.define(elementTag, HeaderElement);
+  window.customElements.define(elementTag, FooterElement);
 })()
 </script>
