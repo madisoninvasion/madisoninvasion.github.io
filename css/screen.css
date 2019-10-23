@@ -586,12 +586,28 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .hide-for-splash {
   display: none;
 }
+.sticky-bar {
+  text-align: center;
+}
 .splash-header {
   color: white;
   text-align: center;
   font-size: 2em;
   padding-top: 35px;
   opacity: 0.8;
+  display: inline-block;
+}
+@media (max-width: 992px) {
+  .splash-header {
+    font-size: 1.5em;
+    display: block;
+  }
+  .splash-header:nth-of-type(2) {
+    display: none;
+  }
+  .splash-header:nth-of-type(3) {
+    padding-top: 7px;
+  }
 }
 
 .container .button a {
@@ -2616,9 +2632,6 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     .site-image.page-img,
     .site-image.home-img {
         background-size: cover;
-    }
-    .splash-header {
-      font-size: 1.2em;
     }
 }
 @media (max-width: 320px) {
