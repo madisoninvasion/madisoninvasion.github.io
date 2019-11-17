@@ -63,7 +63,7 @@
 })();
 
 
-/*  SCROOL TOP  */
+/*  SCROLL TOP  */
 jQuery(document).ready(function () {
     "use strict";
     jQuery('.backtotop').click(function () {
@@ -73,11 +73,24 @@ jQuery(document).ready(function () {
         return false;
     });
 
-    jQuery(function() {
-        if(jQuery('.sticky-bar').length) {
-            jQuery(".sticky-bar").sticky({topSpacing:0, zIndex:200})
+/* sticky header smooth transitions */
+    $( window ).scroll(function() {
+      if ($( window ).scrollTop() != 0) {
+        $(".sticky-wrapper").addClass("is-sticky");
+        if ($(".path-section")[0] != undefined && !($(".path-section")[0].hasAttribute("style"))) {
+          $(".path-section").animate({"padding-top": "159px"}, 200);
         }
+      } else {
+        $(".sticky-wrapper").removeClass("is-sticky");
+        $(".path-section").removeAttr("style");
+      }
     });
+
+    // jQuery(function() {
+    //     if(jQuery('.sticky-bar').length) {
+    //         jQuery(".sticky-bar").sticky({topSpacing:0, zIndex:200})
+    //     }
+    // });
 
     jQuery(".responsive-menu").click(function (e) {
         jQuery(".main-nav>ul").css({display: "block"});
@@ -240,7 +253,7 @@ jQuery(document).ready(function () {
                 $this.find('#' + event.type).html(event.value);
                 if(event.type === 'days'){
                     progress = ((days - event.value) * 100) / (days);
-                }else{                    
+                }else{
                     progress = (100 / divider[event.type]) * (divider[event.type] - event.value);
                 }
                 break;
