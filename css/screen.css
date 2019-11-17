@@ -2623,6 +2623,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     }
 }
 @media (max-width: 992px) {
+    header .bottom-header {
+      padding-bottom: 25px;
+    }
     .our-team .team-member {
         max-width: 280px;
         margin: 0 auto 30px;
