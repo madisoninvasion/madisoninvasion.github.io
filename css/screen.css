@@ -1863,95 +1863,8 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 /* end the slider */
 
-
-/* start events schedule */
-.homepage .event-schedule {
-    margin-bottom: 0;
-}
-.event-schedule {
-    padding: 50px 0;
-}
-.event-schedule .event-day {
-    border-top: 1px solid #e9eef1;
-    position: relative;
-    padding-left: 80px;
-    margin-top: -1px;
-}
-.event-schedule .event-day h5 {
-    width: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    font-size: 18px;
-    color: #31393f;
-    padding-top: 10px;
-    line-height: 1.5em;
-    text-transform: none;
-    font-weight: 700;
-}
-.event-schedule .event-day h5 span {
-    font-weight: 400;
-}
-.event-schedule .tab-content ul {
-    margin: 0;
-    padding: 3px 0;
-    font-size: 0;
-    border-bottom: 1px solid #e9eef1;
-}
-.event-schedule .tab-content ul:hover {
-    background: #f6f6f6;
-}
-.event-schedule .tab-content ul li {
-    list-style: none;
-    display: inline-block;
-    font-size: 13px;
-    padding: 10px;
-    min-height: 42px;
-    color: #31393f;
-    font-weight: 00;
-    *zoom: 1;
-    *display: inline;
-}
-.event-schedule .tab-content ul li a {
-    color: #31393f;
-    /*font-size: 15px;*/
-    font-weight: 400;
-}
-.event-schedule .tab-content ul li a:hover {
-    border-bottom: 1px dotted;
-}
-.event-schedule .tab-content ul li i {
-    color: #21AA98;
-    font-style: normal;
-    font-weight: 400;
-}
-.event-schedule .tab-content ul li:first-child {
-    border-right: 2px solid #ccd5da;
-    font-size: 11px;
-    text-align: right;
-    line-height: 1.5em;
-    font-weight: 400;
-    padding: 5px 10px;
-    color: #9fa3a5;
-    margin-right: 10px;
-}
-.event-schedule .tab-content ul li.single-time {
-    padding: 13px 10px;
-}
-.event-schedule .tab-content ul li:last-child {
-    border-left: 2px solid #ccd5da;
-    /* text-align: center; */
-    color: #9fa3a5;
-    font-weight: 300;
-}
-.event-schedule .tab-content ul li:last-child span {
-    font-weight: 400;
-}
-.event-schedule .tab-content ul li:first-child span {
-    display: block;
-    color: #31393f;
-}
+/* events schedule */
+/* mobile first */
 .event-schedule .nav-tabs {
     border: 0;
     padding: 0;
@@ -1984,7 +1897,161 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     color: #fff;
     border: 1px solid #21AA98;
 }
-/* end events schedule */
+.homepage .event-schedule {
+    margin-bottom: 0;
+}
+.event-schedule {
+    padding: 50px 0;
+}
+.event-schedule .event-day {
+    border-top: 1px solid #e9eef1;
+    position: relative;
+    padding-left: 80px;
+    margin-top: -1px;
+}
+.event-schedule .event-day .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 63px;
+}
+.event-schedule .event-day {
+  padding-left: 0;
+  margin-top: 50px;
+}
+.event-schedule .event-day>h5 {
+  width: 80px;
+  position: absolute;
+  top: -39px;
+  left: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #31393f;
+  padding-top: 10px;
+  line-height: 1.5em;
+  text-transform: none;
+  font-weight: 700;
+}
+.event-schedule .event-day>h5 span {
+  font-weight: 400;
+}
+.event-schedule .tab-content .row {
+  margin: 0;
+  padding: 3px 0;
+  font-size: 0;
+  border-bottom: 1px solid #e9eef1;
+}
+.event-schedule .tab-content .row:hover {
+  background: #f6f6f6;
+}
+.event-schedule .event-day .row>li {
+  list-style: none;
+  display: inline-block;
+  font-size: 13px;
+  color: #31393f;
+  font-weight: 00;
+  *zoom: 1;
+  *display: inline;
+
+  width: calc(100% - 85px);
+  min-height: 0px;
+  padding: 3px 10px;
+}
+.event-schedule .event-day .row>li:first-child {
+  border-right: 2px solid #ccd5da;
+  font-size: 11px;
+  text-align: right;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #9fa3a5;
+  margin-right: 10px;
+
+  width: 85px;
+  padding: 12px 10px;
+}
+.event-schedule .event-day .row>li:first-child>span {
+  display: block;
+  color: #31393f;
+}
+.event-schedule .event-day .row>li:last-child {
+  border: none;
+  color: #9fa3a5;
+  font-weight: 300;
+}
+.event-schedule .event-day .row>li:last-child>span {
+  font-weight: 400;
+  display: none;
+}
+.event-schedule .tab-content .row>li.single-time {
+  padding: 20px 10px;
+}
+.event-schedule .tab-content .row>li.no-venue {
+  padding: 16px 10px;
+}
+.event-schedule .tab-content .row>li a {
+  color: #31393f;
+  font-weight: 400;
+}
+.event-schedule .tab-content .row>li a:hover {
+  border-bottom: 1px dotted;
+}
+.event-schedule .tab-content .row>li i {
+  float: right;
+  color: #21AA98;
+  font-style: normal;
+  font-weight: 400;
+}
+/* responsive schedule */
+@media (min-width: 650px) {
+  .event-schedule .event-day .row {
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 69px;
+  }
+  .event-schedule .event-day .row>li {
+    flex-grow: 2;
+    padding: 12px 10px;
+    width: auto;
+  }
+  .event-schedule .event-day .row>li:first-child {
+    width: 70px;
+    padding: 15px 10px;
+    flex-grow: 0;
+  }
+  .event-schedule .event-day .row>li:last-child {
+    flex-grow: 0;
+    width: 315px;
+    border-left: 2px solid #ccd5da;
+  }
+  .event-schedule .event-day .row>li i {
+    float: none;
+    display: block;
+  }
+  .event-schedule .event-day .row>li.with-alt {
+    padding: 9px 10px;
+  }
+  .event-schedule .event-day .row>li.with-alt + li {
+    padding: 20px 10px;
+  }
+  .event-schedule .tab-content .row>li.no-venue {
+    padding: 20px 10px;
+  }
+  .event-schedule .tab-content .row>li.no-venue + li {
+    border: none;
+  }
+}
+@media (min-width: 992px) {
+  .event-schedule .event-day>h5 {
+    top: 0px;
+  }
+  .event-schedule .event-day .row {
+    margin-left: 100px;
+  }
+  .event-schedule .event-day .row>li:last-child {
+    width: 450px;
+  }
+}
+/* end new events schedule */
 
 /* start timetable */
 .timetable-section {
