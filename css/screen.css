@@ -625,22 +625,33 @@ header .bottom-header .main-nav ul li ul li:hover ul {
   }
 }
 
-.container .button a {
-	background: #6DBAAD;
-	color: #fff;
-	font-size: 24px;
+  .container .button a {
+    background: #6DBAAD;
+    color: #fff;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.5em;
     padding: 15px 15px;
     display: block;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 3px;
-	text-align:center;
-	width: 300px;
-	}
+    text-align:center;
+    width: 300px;
+  }
+  .container .button a.text {
+    width: 700px;
+  }
+  @media(max-width: 750px) {
+    .container .button {
+      padding: 0 30px;
+    }
+    .container .button a.text {
+      width: auto;
+    }
+  }
 .container .button a:hover{
     background: #1D396B;
 }
@@ -937,7 +948,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 .pricing-tables-2 .pricing-box {
     margin: 0 0 30px;
-    padding: 70px 30px;
+    padding: 70px 30px 40px;
     background: #f6f8f9;
     border: 1px solid #e4e4e4;
 }
@@ -958,6 +969,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     padding: 0;
     margin: 0 0 20px;
     border: 0;
+    min-height: 180px;
 }
 .pricing-tables-2 .site-dot li:last-child,
 .pricing-tables-2 .site-dot li:first-child {
@@ -1001,6 +1013,17 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     color: #fff;
     font-weight: 700;
     padding: 6px;
+}
+/* Responsive */
+@media(max-width: 1200px) {
+  .pricing-tables-2 .pricing-box .pricing-box-info {
+      min-height: 225px;
+  }
+}
+@media(max-width: 992px) {
+  .pricing-tables-2 .pricing-box .pricing-box-info {
+      min-height: 160px;
+  }
 }
 /* Pricing type 3 */
 .pricing-tables-3 {
@@ -1651,9 +1674,13 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 
 /* Added by Scott */
 .coming-events .container>div {
-  width: 12%;
   display: inline-block;
-  margin: 0 2%
+  /* for 6 blocks */
+  /* width: 12%;
+  margin: 0 2% */
+  /* for 4 blocks */
+  width: 15%;
+  margin: 0 4.8%;
 }
 /* end coming-events */
 
@@ -2661,8 +2688,12 @@ header .bottom-header .main-nav ul li ul li:hover ul {
         min-height: 70px;
     }
     .coming-events .container>div {
-        width: 20%;
-        margin: 0 6%;
+        /* for 6 blocks */
+        /* width: 20%;
+        margin: 0 6%; */
+        /* for 4 block */
+        width: 30%;
+        margin: 0 9.8%;
     }
     .pricing-tables li:last-child .pricing-box .pricing-box-circle:after,
     .pricing-tables li:first-child .pricing-box .pricing-box-circle:before {
@@ -3238,6 +3269,15 @@ header .bottom-header .main-nav ul li ul li:hover ul {
   .the-countdown .time-box-container {
     width: 50%;
   }
+}
+
+.our-team p iframe.large {
+  width: 100%;
+  min-height: 350px;
+}
+.our-team p iframe.small {
+  width: 100%;
+  min-height: 200px;
 }
 
 /* Added 21.10.2015 Login / Register CSS */
