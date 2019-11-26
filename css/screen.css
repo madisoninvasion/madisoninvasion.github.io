@@ -1678,9 +1678,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
   /* for 6 blocks */
   /* width: 12%;
   margin: 0 2% */
-  /* for 4 blocks */
+  /* for 3 blocks */
   width: 15%;
-  margin: 0 4.8%;
+  margin: 0 9%;
 }
 /* end coming-events */
 
@@ -2319,6 +2319,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 
     border-radius: 100%;
     margin: 0 auto 20px;
+    max-width: 480px;
 }
 .our-team .team-member .member-cover .round-relative {
     overflow: hidden;
@@ -2691,9 +2692,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
         /* for 6 blocks */
         /* width: 20%;
         margin: 0 6%; */
-        /* for 4 block */
-        width: 30%;
-        margin: 0 9.8%;
+        /* for 3 block */
+        width: 20%;
+        margin: 0 6.4%;
     }
     .pricing-tables li:last-child .pricing-box .pricing-box-circle:after,
     .pricing-tables li:first-child .pricing-box .pricing-box-circle:before {
