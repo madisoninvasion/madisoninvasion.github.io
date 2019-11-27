@@ -27,7 +27,7 @@
 
 /* Base
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Francois+One|Lato:400,300,300italic,400italic,700,700italic,900,900italic");
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Lato:300,400,700&display=swap');
 @charset "UTF-8";
 * {
     margin: 0;
@@ -319,6 +319,11 @@ header .top-header ul li a:hover {
 .is-sticky header .bottom-header {
     padding: 17px 0 0;
 	background: rgba(0,82,96,0.8);
+
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 .is-sticky header {
 
@@ -388,6 +393,11 @@ header .top-header .header-social li a {
 header .bottom-header {
     padding-top: 25px;
     padding-bottom: 5px;
+
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
 header .bottom-header .logo {
     font-size: 30px;
@@ -472,11 +482,13 @@ header .bottom-header .main-nav>ul>li>a {
 }
 header .bottom-header .main-nav ul li:hover>ul {
     display: block;
-	color: #9ecdc4;
+	/* color: #9ecdc4; */
+  color: #1D396B;
 }
-header .bottom-header .main-nav ul li:hover a {
+header .bottom-header .main-nav ul li:hover>a {
     display: block;
-	color: #1D396B;
+	/* color: #1D396B; */
+  color: #9ecdc4
 }
 header .bottom-header .main-nav ul li>ul {
     display: none;
@@ -527,6 +539,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 /* end main-nav */
 
+.is-sticky + .path-section {
+  padding-top: 172px;
+}
 
 /* start partners */
 .our-partners {
@@ -571,7 +586,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 /* start site image */
 .site-image {
     position: relative;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .site-image.home-img {
     background: url('../images/HeroBanner_2020.jpg') no-repeat top center;
@@ -610,22 +625,33 @@ header .bottom-header .main-nav ul li ul li:hover ul {
   }
 }
 
-.container .button a {
-	background: #6DBAAD;
-	color: #fff;
-	font-size: 24px;
+  .container .button a {
+    background: #6DBAAD;
+    color: #fff;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.5em;
     padding: 15px 15px;
     display: block;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 3px;
-	text-align:center;
-	width: 300px;
-	}
+    text-align:center;
+    width: 300px;
+  }
+  .container .button a.text {
+    width: 700px;
+  }
+  @media(max-width: 750px) {
+    .container .button {
+      padding: 0 30px;
+    }
+    .container .button a.text {
+      width: auto;
+    }
+  }
 .container .button a:hover{
     background: #1D396B;
 }
@@ -917,9 +943,12 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     color: #555;
 }
 /* Pricing type 2 */
+.pricing-tables-2 {
+  list-style-type: none;
+}
 .pricing-tables-2 .pricing-box {
     margin: 0 0 30px;
-    padding: 70px 30px;
+    padding: 70px 30px 40px;
     background: #f6f8f9;
     border: 1px solid #e4e4e4;
 }
@@ -940,6 +969,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     padding: 0;
     margin: 0 0 20px;
     border: 0;
+    min-height: 180px;
 }
 .pricing-tables-2 .site-dot li:last-child,
 .pricing-tables-2 .site-dot li:first-child {
@@ -983,6 +1013,17 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     color: #fff;
     font-weight: 700;
     padding: 6px;
+}
+/* Responsive */
+@media(max-width: 1200px) {
+  .pricing-tables-2 .pricing-box .pricing-box-info {
+      min-height: 225px;
+  }
+}
+@media(max-width: 992px) {
+  .pricing-tables-2 .pricing-box .pricing-box-info {
+      min-height: 160px;
+  }
 }
 /* Pricing type 3 */
 .pricing-tables-3 {
@@ -1538,7 +1579,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 7px solid #F26130;
+    border: 5px solid #F26130;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -1629,6 +1670,17 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .coming-events ul li:last-child:hover,
 .coming-events ul li:first-child:hover {
     color: #a5b3b9;
+}
+
+/* Added by Scott */
+.coming-events .container>div {
+  display: inline-block;
+  /* for 6 blocks */
+  /* width: 12%;
+  margin: 0 2% */
+  /* for 3 blocks */
+  width: 15%;
+  margin: 0 9%;
 }
 /* end coming-events */
 
@@ -1838,92 +1890,8 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 /* end the slider */
 
-
-/* start events schedule */
-.homepage .event-schedule {
-    margin-bottom: 0;
-}
-.event-schedule {
-    padding: 50px 0;
-}
-.event-schedule .event-day {
-    border-top: 1px solid #e9eef1;
-    position: relative;
-    padding-left: 80px;
-    margin-top: -1px;
-}
-.event-schedule .event-day h5 {
-    width: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    font-size: 18px;
-    color: #31393f;
-    padding-top: 10px;
-    line-height: 1.5em;
-    text-transform: none;
-    font-weight: 700;
-}
-.event-schedule .event-day h5 span {
-    font-weight: 400;
-}
-.event-schedule .tab-content ul {
-    margin: 0;
-    padding: 3px 0;
-    font-size: 0;
-    border-bottom: 1px solid #e9eef1;
-}
-.event-schedule .tab-content ul:hover {
-    background: #f6f6f6;
-}
-.event-schedule .tab-content ul li {
-    list-style: none;
-    display: inline-block;
-    font-size: 13px;
-    padding: 10px;
-    min-height: 42px;
-    color: #31393f;
-    font-weight: 00;
-    *zoom: 1;
-    *display: inline;
-}
-.event-schedule .tab-content ul li a {
-    color: #31393f;
-    /*font-size: 15px;*/
-    font-weight: 400;
-}
-.event-schedule .tab-content ul li a:hover {
-    border-bottom: 1px dotted;
-}
-.event-schedule .tab-content ul li i {
-    color: #21AA98;
-    font-style: normal;
-    font-weight: 400;
-}
-.event-schedule .tab-content ul li:first-child {
-    border-right: 2px solid #ccd5da;
-    font-size: 11px;
-    text-align: right;
-    line-height: 1.5em;
-    font-weight: 400;
-    padding: 5px 10px;
-    color: #9fa3a5;
-    margin-right: 10px;
-}
-.event-schedule .tab-content ul li:last-child {
-    border-left: 2px solid #ccd5da;
-    text-align: center;
-    color: #9fa3a5;
-    font-weight: 300;
-}
-.event-schedule .tab-content ul li:last-child span {
-    font-weight: 400;
-}
-.event-schedule .tab-content ul li:first-child span {
-    display: block;
-    color: #31393f;
-}
+/* events schedule */
+/* mobile first */
 .event-schedule .nav-tabs {
     border: 0;
     padding: 0;
@@ -1956,7 +1924,161 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     color: #fff;
     border: 1px solid #21AA98;
 }
-/* end events schedule */
+.homepage .event-schedule {
+    margin-bottom: 0;
+}
+.event-schedule {
+    padding: 50px 0;
+}
+.event-schedule .event-day {
+    border-top: 1px solid #e9eef1;
+    position: relative;
+    padding-left: 80px;
+    margin-top: -1px;
+}
+.event-schedule .event-day .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 63px;
+}
+.event-schedule .event-day {
+  padding-left: 0;
+  margin-top: 50px;
+}
+.event-schedule .event-day>h5 {
+  width: 80px;
+  position: absolute;
+  top: -39px;
+  left: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #31393f;
+  padding-top: 10px;
+  line-height: 1.5em;
+  text-transform: none;
+  font-weight: 700;
+}
+.event-schedule .event-day>h5 span {
+  font-weight: 400;
+}
+.event-schedule .tab-content .row {
+  margin: 0;
+  padding: 3px 0;
+  font-size: 0;
+  border-bottom: 1px solid #e9eef1;
+}
+.event-schedule .tab-content .row:hover {
+  background: #f6f6f6;
+}
+.event-schedule .event-day .row>li {
+  list-style: none;
+  display: inline-block;
+  font-size: 13px;
+  color: #31393f;
+  font-weight: 00;
+  *zoom: 1;
+  *display: inline;
+
+  width: calc(100% - 85px);
+  min-height: 0px;
+  padding: 3px 10px;
+}
+.event-schedule .event-day .row>li:first-child {
+  border-right: 2px solid #ccd5da;
+  font-size: 11px;
+  text-align: right;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #9fa3a5;
+  margin-right: 10px;
+
+  width: 85px;
+  padding: 12px 10px;
+}
+.event-schedule .event-day .row>li:first-child>span {
+  display: block;
+  color: #31393f;
+}
+.event-schedule .event-day .row>li:last-child {
+  border: none;
+  color: #9fa3a5;
+  font-weight: 300;
+}
+.event-schedule .event-day .row>li:last-child>span {
+  font-weight: 400;
+  display: none;
+}
+.event-schedule .tab-content .row>li.single-time {
+  padding: 20px 10px;
+}
+.event-schedule .tab-content .row>li.no-venue {
+  padding: 16px 10px;
+}
+.event-schedule .tab-content .row>li a {
+  color: #31393f;
+  font-weight: 400;
+}
+.event-schedule .tab-content .row>li a:hover {
+  border-bottom: 1px dotted;
+}
+.event-schedule .tab-content .row>li i {
+  float: right;
+  color: #21AA98;
+  font-style: normal;
+  font-weight: 400;
+}
+/* responsive schedule */
+@media (min-width: 650px) {
+  .event-schedule .event-day .row {
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 69px;
+  }
+  .event-schedule .event-day .row>li {
+    flex-grow: 2;
+    padding: 12px 10px;
+    width: auto;
+  }
+  .event-schedule .event-day .row>li:first-child {
+    width: 70px;
+    padding: 15px 10px;
+    flex-grow: 0;
+  }
+  .event-schedule .event-day .row>li:last-child {
+    flex-grow: 0;
+    width: 315px;
+    border-left: 2px solid #ccd5da;
+  }
+  .event-schedule .event-day .row>li i {
+    float: none;
+    display: block;
+  }
+  .event-schedule .event-day .row>li.with-alt {
+    padding: 9px 10px;
+  }
+  .event-schedule .event-day .row>li.with-alt + li {
+    padding: 20px 10px;
+  }
+  .event-schedule .tab-content .row>li.no-venue {
+    padding: 20px 10px;
+  }
+  .event-schedule .tab-content .row>li.no-venue + li {
+    border: none;
+  }
+}
+@media (min-width: 992px) {
+  .event-schedule .event-day>h5 {
+    top: 0px;
+  }
+  .event-schedule .event-day .row {
+    margin-left: 100px;
+  }
+  .event-schedule .event-day .row>li:last-child {
+    width: 450px;
+  }
+}
+/* end new events schedule */
 
 /* start timetable */
 .timetable-section {
@@ -2197,6 +2319,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 
     border-radius: 100%;
     margin: 0 auto 20px;
+    max-width: 480px;
 }
 .our-team .team-member .member-cover .round-relative {
     overflow: hidden;
@@ -2247,8 +2370,15 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 .our-team .team-member .member-cover img {
     border-radius: 100%;
-	border: 5px solid #cccccc;
+	   border: 5px solid #cccccc;
     padding: 15px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+#instruct.our-team .team-member .member-cover img:hover {
+    border-color: #F26130;
 }
 .our-team .team-member h5 {
     color: #798289;
@@ -2257,6 +2387,13 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     margin: 0 auto;
     text-transform: uppercase;
     font-weight: 700;
+}
+#instruct.our-team .team-member h5:hover {
+    color: #F26130;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
 .our-team .team-member h6 {
     color: #21AA98;
@@ -2514,6 +2651,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     }
 }
 @media (max-width: 992px) {
+    header .bottom-header {
+      padding-bottom: 25px;
+    }
     .our-team .team-member {
         max-width: 280px;
         margin: 0 auto 30px;
@@ -2548,9 +2688,20 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     .event-header .event-header-box .box-event-info {
         min-height: 70px;
     }
+    .coming-events .container>div {
+        /* for 6 blocks */
+        /* width: 20%;
+        margin: 0 6%; */
+        /* for 3 block */
+        width: 20%;
+        margin: 0 6.4%;
+    }
     .pricing-tables li:last-child .pricing-box .pricing-box-circle:after,
     .pricing-tables li:first-child .pricing-box .pricing-box-circle:before {
         display: block;
+    }
+    .is-sticky header .bottom-header {
+      padding: 17px 0 10px;
     }
     header .top-header ul {
         text-align: center;
@@ -2631,7 +2782,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     .site-image.error-img,
     .site-image.page-img,
     .site-image.home-img {
-        background-size: cover;
+        /* background-size: cover; */
     }
 }
 @media (max-width: 320px) {
@@ -2895,6 +3046,25 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     background: url("../images/HeroFooter.jpg");
     padding-top: 20px;
 }
+.footer-v2>div.container {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.footer-v2 .row .footer-col1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 20%
+}
+.footer-v2 .row .footer-col2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: right;
+  width: 39%;
+  text-align: right;
+}
 .footer-v2 .widget {
     margin-bottom: 50px;
 }
@@ -3052,6 +3222,18 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     vertical-align: top;
     margin: 5px 16px 0;
 }
+
+@media (max-width: 640px) {
+  .footer-v2 .row .footer-col1,
+  .footer-v2 .row .footer-col2 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-v2 .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 /* end footer v2 */
 
 
@@ -3076,6 +3258,27 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     background: url('../images/link-arrow-2.png') center right no-repeat;
     cursor: pointer;
     margin-top: 315px;
+}
+.the-countdown .time-box-container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 25%
+}
+@media (max-width: 640px) {
+  .the-countdown .time-box-container {
+    width: 50%;
+  }
+}
+
+.our-team p iframe.large {
+  width: 100%;
+  min-height: 350px;
+}
+.our-team p iframe.small {
+  width: 100%;
+  min-height: 200px;
 }
 
 /* Added 21.10.2015 Login / Register CSS */
