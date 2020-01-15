@@ -98,15 +98,19 @@ jQuery(document).ready(function () {
     //     }
     // });
 
-    jQuery(".responsive-menu").click(function (e) {
-        jQuery(".main-nav>ul").css({display: "block"});
-        e.stopPropagation();
-        if (e.preventDefault)
-            e.preventDefault();
-        return false;
-    });
-    jQuery("body").click(function () {
-        jQuery(".main-nav>ul").css({display: "none"});
+    jQuery(".sticky-wrapper").load("views/header.html", function() {
+
+      jQuery(".responsive-menu").click(function (e) {
+          jQuery(".main-nav>ul").css({display: "block"});
+          e.stopPropagation();
+          if (e.preventDefault)
+              e.preventDefault();
+          return false;
+      });
+
+      jQuery("body").click(function () {
+          jQuery(".main-nav>ul").css({display: "none"});
+      });
     });
 
     if (!Array.prototype.indexOf) {
@@ -124,8 +128,6 @@ jQuery(document).ready(function () {
 
     jQuery('input[placeholder], textarea[placeholder]').placeholder();
 });
-
-
 
 jQuery('.contact-form').each(function () {
     "use strict";
