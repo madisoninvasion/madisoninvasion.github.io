@@ -2061,6 +2061,10 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     float: none;
     display: block;
   }
+  .event-schedule .event-day .row>li.no-alt,
+  .event-schedule .event-day .row>li.no-alt + li {
+    padding: 20px 10px;
+  }
   .event-schedule .event-day .row>li.with-alt {
     padding: 9px 10px;
   }
