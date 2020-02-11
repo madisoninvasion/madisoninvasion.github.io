@@ -931,7 +931,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .pricing-box .pricing-box-info ul li:last-child:after {
     display: none;
 }
-.pricing-box a {
+/* .pricing-box a {
     color: #858f93;
     margin: 10px auto 35px;
     display: inline-block;
@@ -942,7 +942,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 .pricing-box a:hover {
     color: #555;
-}
+} */
 /* Pricing type 2 */
 .pricing-tables-2 {
   list-style-type: none;
@@ -977,7 +977,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     width: 50px;
     min-width: 25px;
 }
-.pricing-tables-2 a {
+/* .pricing-tables-2 a {
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
@@ -995,7 +995,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .pricing-tables-2 a:hover {
     background: #F26130;
     color: #fff;
-}
+} */
 .pricing-tables-2 .pricing-box-popular {
     position: relative;
 }
