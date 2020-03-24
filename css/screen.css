@@ -323,7 +323,7 @@ header .top-header ul li a:hover {
 }
 
 .covid + header {
-  padding-top: 121px;
+  padding-top: 99px;
 }
 
 @media (min-width: 720px) {
