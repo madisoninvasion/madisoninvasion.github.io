@@ -314,7 +314,7 @@ header .top-header ul li a:hover {
   /* background: rgba(0,82,96,0.8); */
   background: rgba(191, 39, 39, 0.8);
   border-bottom: 3px solid white;
-  font-size: 1em;
+  font-size: 0.9em;
   z-index: 99;
 }
 
@@ -323,7 +323,7 @@ header .top-header ul li a:hover {
 }
 
 .covid + header {
-  padding-top: 121px;
+  padding-top: 99px;
 }
 
 @media (min-width: 720px) {
