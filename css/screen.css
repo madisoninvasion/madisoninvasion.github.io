@@ -980,6 +980,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 /* Pricing type 2 */
 .pricing-tables-2 {
   list-style-type: none;
+  padding: 0 175px;
 }
 .pricing-tables-2 .pricing-box {
     margin: 0 0 30px;
@@ -992,6 +993,10 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     line-height: 0.8em;
     color: #F26130;
     text-align: center;
+}
+.pricing-tables-2 .pricing-box h6.old-price {
+    text-decoration: line-through;
+    color: #b1b1b1;
 }
 .pricing-tables-2 .pricing-box p {
     text-align: center;
@@ -1051,6 +1056,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 }
 /* Responsive */
 @media(max-width: 1200px) {
+  .pricing-tables-2 {
+    padding: 0;
+  }
   .pricing-tables-2 .pricing-box {
     padding: 70px 11px 0px;
   }
@@ -1719,9 +1727,13 @@ header .bottom-header .main-nav ul li ul li:hover ul {
   /* for 6 blocks */
   /* width: 12%;
   margin: 0 2% */
+  /* for 4 blocks */
+  /* width: 16%;
+  margin: 0 4%; */
   /* for 3 blocks */
   width: 15%;
   margin: 0 9%;
+
 }
 /* end coming-events */
 
@@ -2740,6 +2752,9 @@ header .bottom-header .main-nav ul li ul li:hover ul {
         /* for 3 block */
         width: 20%;
         margin: 0 6.4%;
+        /* for 2 blocks */
+        /* width: 30%;
+        margin: 0 9%; */
     }
     .pricing-tables li:last-child .pricing-box .pricing-box-circle:after,
     .pricing-tables li:first-child .pricing-box .pricing-box-circle:before {
