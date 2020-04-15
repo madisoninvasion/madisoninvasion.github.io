@@ -1993,7 +1993,8 @@ header .bottom-header .main-nav ul li ul li:hover ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 63px;
+  /* max-height: 63px; */
+  max-height: 90px;
 }
 .event-schedule .event-day {
   padding-left: 0;
@@ -2068,13 +2069,37 @@ header .bottom-header .main-nav ul li ul li:hover ul {
 .event-schedule .tab-content .row>li.no-venue {
   padding: 16px 10px;
 }
+
+/* Changes for COVID schedule */
 .event-schedule .tab-content .row>li a {
+  /* color: #31393f; */
+  color: #21AA98;
+  font-weight: 400;
+}
+.event-schedule .tab-content .row>li a:hover {
+  /* border-bottom: 1px dotted; */
+}
+.event-schedule .tab-content .row>li:last-child a {
+  color: #31393f;
+  font-weight: 400;
+}
+.event-schedule .tab-content .row>li:last-child a:hover {
+  color: #21AA98;
+}
+.event-schedule .tab-content .row>li:last-child {
+  color: #31393f;
+  font-weight: 400;
+  border-top: 1px solid #ccd5da;
+}
+/* .event-schedule .tab-content .row>li a {
   color: #31393f;
   font-weight: 400;
 }
 .event-schedule .tab-content .row>li a:hover {
   border-bottom: 1px dotted;
-}
+} */
+
+
 .event-schedule .tab-content .row>li i {
   float: right;
   color: #21AA98;
@@ -2102,6 +2127,7 @@ header .bottom-header .main-nav ul li ul li:hover ul {
     flex-grow: 0;
     width: 315px;
     border-left: 2px solid #ccd5da;
+    border-top: none;
   }
   .event-schedule .event-day .row>li i {
     float: none;
